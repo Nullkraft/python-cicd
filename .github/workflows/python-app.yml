@@ -62,8 +62,8 @@ jobs:
           wily diff generator/ -r master
       - name: Show wily report
         run: |
-          wily report generator/generator.py
-          wily report test/test_generator.py
+          wily report generator/generator.py --message
+          wily report test/test_generator.py --message
       - name: Show wily rank
         run: |
           wily rank generator/ 
