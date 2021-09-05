@@ -65,7 +65,8 @@ connectors = (
     "And",
     "By",
     "For",
-    "Against"
+    "Against",
+    "Fired"
 )
 
 
