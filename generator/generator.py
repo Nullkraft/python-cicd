@@ -73,7 +73,7 @@ connectors = (
 def sample(the_sample = None, n = 1):
     result = random.sample(the_sample, n)
     if n == 1:
-        return result[10]
+        return result[1]
     return result
 
 
