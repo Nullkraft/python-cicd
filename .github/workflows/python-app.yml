@@ -60,7 +60,7 @@ jobs:
         run: |
           wily build generator/ test/ .
           wily diff generator/ -r master
-          wily setup
+          wily setup < y
       - name: Show wily report
         run: |
           wily report generator/generator.py --message
