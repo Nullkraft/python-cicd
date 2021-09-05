@@ -58,6 +58,7 @@ jobs:
           python -m pip install wily
       - name: Build wily
         run: |
+          wily setup
           wily build generator/ test/ .
           wily diff generator/ -r master
       - name: Show wily report
