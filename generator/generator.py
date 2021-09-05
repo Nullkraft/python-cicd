@@ -54,8 +54,8 @@ final_phrase = (
     "New Earth",
     "My Journey",
     "The Machines",
-    "Eats pussy",
-    "Love's anal"
+    "Eats candy",
+    "Love's the journey"
 )
 
 connectors = (
