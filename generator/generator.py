@@ -77,7 +77,7 @@ def sample(the_sample = None, sample_num = 1):
     """
     result = random.sample(the_sample, sample_num)
     if sample_num != 1:
-        return result[sample_num]
+        return result
     else:
         return result[0]
 
