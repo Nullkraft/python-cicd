@@ -9,6 +9,7 @@ def test_sample_single_word():
 def test_sample_multiple_words():
     l = ('test', 'multiple', 'words')
     words = generator.sample(l, 2)
+    print(words)
     assert len(words) == 2
 
 
