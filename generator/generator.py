@@ -73,13 +73,19 @@ connectors = (
 )
 
 
-def sample(the_sample = None, n = 1):
-    result = random.sample(the_sample, n)
-    if n == 1:
-        return result[0]
+def sample(the_sample = None, sample_num = 1):
+    """
+    Sample the goods
+    """
+    if sample_num == 1:
+        result = random.sample(the_sample, sample_num)
+    return result[0]
 
 
 def generate_movie():
+    """
+    Make a great movie name
+    """
     phrase = ' '.join([sample(character), sample(connectors), sample(final_phrase)])
     return phrase.title()
 
