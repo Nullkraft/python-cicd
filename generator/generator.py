@@ -84,7 +84,10 @@ def generate_movie():
     Make a great movie name
     """
     phrase = ' '.join([sample(character), sample(connectors), sample(final_phrase)])
-    return phrase.title()
+    if sample_num != 1:
+        print(f'sample num = {sample_num}')
+    else:
+        return phrase.title()
 
 
 if __name__ == "__main__":
