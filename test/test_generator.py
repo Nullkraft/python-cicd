@@ -12,7 +12,6 @@ def test_sample_multiple_words():
     """ Test multiple sample words """
     word_list = ('test', 'multiple', 'words')
     words = generator.sample(word_list, 2)
-    print(words)
     assert len(words) == 2
 
 
