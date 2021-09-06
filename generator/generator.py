@@ -76,8 +76,8 @@ def sample(the_sample = None, sample_num = 1):
     Sample the goods
     """
     result = random.sample(the_sample, sample_num)
-#    if sample_num == 1:
-    return result[0]
+    if sample_num == 1:
+        return result[0]
 
 
 def generate_movie():
