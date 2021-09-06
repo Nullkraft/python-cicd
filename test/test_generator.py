@@ -1,18 +1,22 @@
-import unittest
+""" Test module for Movie title generator """
+#import unittest
 from generator import generator
 
 def test_sample_single_word():
-    l = ('test', 'a', 'word')
-    word = generator.sample(l)
-    assert word in l
+    """ Test single sample word """
+    word_list = ('test', 'a', 'word')
+    word = generator.sample(word_list)
+    assert word in word_list
 
 def test_sample_multiple_words():
-    l = ('test', 'multiple', 'words')
-    words = generator.sample(l, 2)
+    """ Test multiple sample words """
+    word_list = ('test', 'multiple', 'words')
+    words = generator.sample(word_list, 2)
     print(words)
     assert len(words) == 2
 
 
 def test_generate_a_movie_with_tree_words():
+    """ Test the generation of a great movie name """
     movie = generator.generate_movie()
     assert len(movie.split(' ')) >= 3
