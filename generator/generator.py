@@ -76,7 +76,10 @@ def sample(the_sample = None, sample_num = 1):
     Sample the goods
     """
     result = random.sample(the_sample, sample_num)
-    return result[0]
+    if sample_num != 1:
+        return result[sample_num]
+    else:
+        return result[0]
 
 
 def generate_movie():
@@ -84,10 +87,7 @@ def generate_movie():
     Make a great movie name
     """
     phrase = ' '.join([sample(character), sample(connectors), sample(final_phrase)])
-    if sample_num != 1:
-        print(f'sample num = {sample_num}')
-    else:
-        return phrase.title()
+    return phrase.title()
 
 
 if __name__ == "__main__":
