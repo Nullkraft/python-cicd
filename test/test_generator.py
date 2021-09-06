@@ -12,7 +12,7 @@ def test_sample_multiple_words():
     """ Test multiple sample words """
     word_list = ('test', 'multiple', 'words')
     my_words = generator.sample(word_list, 2)
-    assert len(list(my_words)) == 2
+    assert len(my_words) == 2
 
 
 def test_generate_a_movie_with_tree_words():
