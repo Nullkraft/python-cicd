@@ -1,3 +1,6 @@
+"""
+Line 1 docstring to be something more real, but later...
+"""
 from __future__ import print_function
 import random
 
@@ -59,7 +62,7 @@ final_phrase = (
 )
 
 connectors = (
-    "Of", 
+    "Of",
     "In",
     "With",
     "And",
@@ -74,7 +77,6 @@ def sample(the_sample = None, n = 1):
     result = random.sample(the_sample, n)
     if n == 1:
         return result[0]
-    return result
 
 
 def generate_movie():
