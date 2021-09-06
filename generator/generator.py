@@ -1,6 +1,4 @@
-"""
-Line 1 docstring to be something more real, but later...
-"""
+""" Line 1 docstring to be something more real, but later... """
 from __future__ import print_function
 import random
 
@@ -77,8 +75,7 @@ def sample(the_sample = None, sample_num = 1):
     """
     Sample the goods
     """
-    if sample_num == 1:
-        result = random.sample(the_sample, sample_num)
+    result = random.sample(the_sample, sample_num)
     return result[0]
 
 
